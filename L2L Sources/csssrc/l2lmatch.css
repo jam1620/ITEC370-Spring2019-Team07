@@ -1,7 +1,7 @@
 #org1, #org2, #org3, #org4, #org5 {
 
-  width: 450px;
-  height: 200px;
+  width: 425px;
+  height: 150px;
   border: 2px solid #939393;
   padding: 10px;
   background-color:#f2f2f2;
@@ -15,13 +15,13 @@
 
 #drop1a, #drop2a, #drop3a, #drop4a, #drop5a {
 
-  width: 450px;
-  height: 200px;
+  width: 425px;
+  height: 180px;
   border: 2px solid #939393;
   position: relative;
-  right: -935px;
-  bottom: 1115px;
-  padding: 10px;
+  right: -775px;
+  bottom: 865px;
+  padding-bottom: 15px;
   background-color:#f2f2f2;
 
 }
@@ -29,6 +29,7 @@
 #drag1, #drag2, #drag3, #drag4, #drag5 {
   width: 350px;
   height: 125px;
+  padding-left: 35px;
 
 }
 
@@ -37,14 +38,13 @@
 }
 
 #end {
-
   position: fixed;
   bottom : 800px;
 }
 
 .ansText {
   font-family: "Arial Black", Gadget, sans-serif;
-  padding-top: 25px;
+  padding-top: 10px;
   text-align: center;
 }
 
