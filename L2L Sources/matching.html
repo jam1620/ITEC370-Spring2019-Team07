@@ -1,105 +1,64 @@
 <html>
   <head>
+    <!MUST BE 1435 x 1338 AT LEAST!>
     <title>Matching</title>
-    <link rel="stylesheet" type="text/css" href="l2l.css">
-    <link rel="stylesheet" type="text/css" href="l2lmatch.css">
-    <script src="l2l.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="csssrc/l2lmatch.css">
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="jssrc/matchjs.js"></script>
 
   </head>
 
-  <body onLoad="qStart()">
-    <div id="container">
-      <header>
-      <img src="logo.png" alt="License to Learn">
-      <br><br>
+  <body onload='rand()'>
+      <div id="container">
+        <header>
+        <center>
+        <img src="imgsrc/logo.png" alt="License to Learn">
+        <br><br>
+
         <a href="licensetolearn.html">
           <button class="btn">Home Page</button>
         </a>
-
-    </header>
-    <div id="sectionOne">
-      <br>
-      <center>
-      <br>
-
-      <div id="qHead">
-        <p id="qNum">Check Your Choices!</p>
-        <button class="btn" id="submit" onClick="">Submit</button><br><br>
+          <span id="nextBtn">
+            <br>
+          <a href="/licensetolearn/matchingMath.html">
+            <button class="btn" id="Submit">Next Set</button>
+          </a>
+        </span>
+        </center>
+        <br>
+        </header>
       </div>
-      <br>
-      <br>
 
-      <div class="questionMatching">
-        <div class="mQues">
-          <div id="mQOne">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mQTwo">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mQThree">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mQFour">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mQFive">
-            text
-          </div>
-        </div>
-
-        <div class="mAns">
-          <div id="mAOne">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mATwo">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mAThree">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mAFour">
-            text
-          </div>
-
-          <br>
-          <br>
-
-          <div id="mAFive">
-            text
-          </div>
-        </div>
-
+      <div class="qs"id = "org1">
+        <img src="imgsrc/ant.png" draggable="true" ondragstart="drag1(event)" id="drag1">
       </div>
+
+      <div class="qs"id = "org2">
+        <img src="imgsrc/blackwidow.png" draggable="true" ondragstart="drag2(event)" id="drag2">
+      </div>
+
+      <div class="qs"id = "org3">
+        <img src="imgsrc/butterfly.png" draggable="true" ondragstart="drag3(event)" id="drag3">
+      </div>
+
+      <div class="qs"id = "org4">
+        <img src="imgsrc/caterpillar.png" draggable="true" ondragstart="drag4(event)" id="drag4">
+      </div>
+
+      <div class="qs"id = "org5">
+        <img src="imgsrc/snake.png" draggable="true" ondragstart="drag5(event)" id="drag5">
+      </div>
+
+      <div class="as" id = "drop1a" ondrop = "drop1(event)" ondragover="allowDrop1(event)"> <p class="ansText">Ant</p> </div>
+      <div class="as" id = "drop2a" ondrop = "drop2(event)" ondragover="allowDrop2(event)"> <p class="ansText">Black Widow</p> </div>
+      <div class="as" id = "drop3a" ondrop = "drop3(event)" ondragover="allowDrop3(event)"> <p class="ansText">Butterfly</p> </div>
+      <div class="as" id = "drop4a" ondrop = "drop4(event)" ondragover="allowDrop4(event)"> <p class="ansText">Caterpillar</p> </div>
+      <div class="as" id = "drop5a" ondrop = "drop5(event)" ondragover="allowDrop5(event)"> <p class="ansText">Snake</p> </div>
+
+
+
+
 
   </body>
   <div id="end">
