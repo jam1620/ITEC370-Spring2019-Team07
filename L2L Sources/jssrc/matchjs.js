@@ -102,18 +102,25 @@ function drop5(ev) {
 
 
 
-function rand() {
+function randq() {
   var questions = $(".qs");
   for(var i = 0; i < questions.length; i++){
       var target = Math.floor(Math.random() * questions.length -1) + 1;
       var target2 = Math.floor(Math.random() * questions.length -1) +1;
       questions.eq(target).before(questions.eq(target2));
   }
+}
 
+function randa() {
   var answers = $(".as");
   for(var i = 0; i < answers.length; i++){
       var target = Math.floor(Math.random() * answers.length -1) + 1;
       var target2 = Math.floor(Math.random() * answers.length -1) +1;
       answers.eq(target).before(answers.eq(target2));
   }
+}
+
+function rand() {
+  randq();
+  randa();
 }
