@@ -1,36 +1,62 @@
 <html>
-  <head>
-    <title>Memory</title>
-    <link rel="stylesheet" type="text/css" href="csssrc/l2l.css">
-    <script src="jssrc/l2l.js"></script>
+	<head>
+		<title>Memory</title>
+		<link rel="stylesheet" type="text/css" href="csssrc/l2l.css">
+		<style> 
+			#memory_game
+			{
+				background:#fff9a8;
+				border-style: ridge;
+				border-color: black;
+				border-width: 3px;
+				width:610px;
+				height: 530px;
+				padding: 10px;
+				margin:0px auto;
+			}
+			.memory_question
+			{
+				background: url('imgsrc/card.png') no-repeat;
+				border-style: ridge;
+				border-color: black;
+				border-width: 3px;
+				width:125px;
+				height:125px;
+				float:left;
+				vertical-align: middle;
+				margin: 10px 10px 10px 10px;
+				background-position: center; 
+				font-size:25px;
+				line-height: 125px;
+				cursor:pointer;
+				text-align:center;
+			}
+			p
+			{
+				text-align: center;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="jssrc/memoryjs.js"></script>
+	</head>
 
-
-  </head>
-
-  <body onLoad="qStart()">
-    <div id="container">
-      <header>
-      <img src="imgsrc/logo.png" alt="License to Learn">
-      <br><br>
-        <a href="licensetolearn.html">
-          <button class="btn">Home Page</button>
-        </a>
-
-    </header>
-    <div id="sectionOne">
-    <br>
-    <center>
-    <br>
-
-    <br>
-    <br>
-
-    <div class="question">
-      <h1>Under Construction</h1>
-    </div>
-
-  </body>
-  <div id="end">
-    KV, JC, WS, MS, JA
-  </div>
+	<body onload="load_board()">
+		<div id="container">
+			<header>
+				<img src="imgsrc/logo.png" alt="License to Learn">
+				<br><br>
+				<a href="licensetolearn.html">
+					<button class="btn">Home Page</button>
+				</a>
+			</header>
+			<div id="sectionOne">
+				<br><br>
+				<div id="memory_game"></div>
+			</div>
+		</div>
+	</body>
+	<div id="end">
+		KV, JC, WS, MS, JA
+	</div>
 </html>
