@@ -1,63 +1,67 @@
 <html>
-	<head>
-		<!MUST BE 1435 x 1338 AT LEAST!>
-		<title>Matching</title>
-		<link rel="stylesheet" type="text/css" href="csssrc/l2l.css"> 
-		<link rel="stylesheet" type="text/css" href="csssrc/l2lmatch.css">
-		<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<script src="jssrc/matchjs.js"></script>
-	</head>
+  <head>
+    <!MUST BE 1435 x 1338 AT LEAST!>
+    <title>Matching</title>
+    <link rel="stylesheet" type="text/css" href="csssrc/l2lmatch.css">
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="jssrc/matchjs.js"></script>
 
-	<body onload='rand()'>
-		<div id="container">
-			<header>
-				<img src="imgsrc/logo.png" alt="License to Learn">
-				<br><br>
-				<a href="licensetolearn.html">
-					<button class="btn">Home Page</button>
-				</a>
-			</header>
-			
-			<div id ="sectionOne">
-                <p id="instr">Match the <u>number</u> of fruit to the matching number!</p>
-				<span id="nextBtn">
-					<br>
-					<a href="matchingLength.html">
-					<button class="btn" id="Submit">Next Set</button>
-					</a>
-				</span>
-				<br>
+  </head>
 
-				<div class="qs"id = "org1">
-					<img src="imgsrc/pineapples.png" draggable="true" ondragstart="drag1(event)" id="drag1">
-				</div>
+  <body onload='rand()'>
+      <div id="container">
+        <header>
+        <center>
+        <img src="imgsrc/logo.png" alt="License to Learn">
+        <br><br>
 
-				<div class="qs"id = "org2">
-					<img src="imgsrc/apples.png" draggable="true" ondragstart="drag2(event)" id="drag2">
-				</div>
+        <a href="licensetolearn.html">
+          <button class="btn">Home Page</button>
+        </a>
+          <span id="nextBtn">
+            <br>
+          <a href="/licensetolearn/matchingLength.html">
+            <button class="btn" id="Submit">Next Set</button>
+          </a>
+        </span>
+        </center>
+        <br>
+        </header>
+      </div>
 
-				<div class="qs"id = "org3">
-					<img src="imgsrc/pears.png" draggable="true" ondragstart="drag3(event)" id="drag3">
-				</div>
+      <div class="qs"id = "org1">
+        <img src="imgsrc/pineapples.png" draggable="true" ondragstart="drag1(event)" id="drag1">
+      </div>
 
-				<div class="qs"id = "org4">
-					<img src="imgsrc/strawberries.png" draggable="true" ondragstart="drag4(event)" id="drag4">
-				</div>
+      <div class="qs"id = "org2">
+        <img src="imgsrc/apples.png" draggable="true" ondragstart="drag2(event)" id="drag2">
+      </div>
 
-				<div class="qs"id = "org5">
-					<img src="imgsrc/bananas.png" draggable="true" ondragstart="drag5(event)" id="drag5">
-				</div>
+      <div class="qs"id = "org3">
+        <img src="imgsrc/pears.png" draggable="true" ondragstart="drag3(event)" id="drag3">
+      </div>
 
-				<div class="as" id = "drop1a" ondrop = "drop1(event)" ondragover="allowDrop1(event)"> <p class="ansText">Five</p> </div>
-				<div class="as" id = "drop2a" ondrop = "drop2(event)" ondragover="allowDrop2(event)"> <p class="ansText">Four </p> </div>
-				<div class="as" id = "drop3a" ondrop = "drop3(event)" ondragover="allowDrop3(event)"> <p class="ansText">Six </p> </div>
-				<div class="as" id = "drop4a" ondrop = "drop4(event)" ondragover="allowDrop4(event)"> <p class="ansText">Three</p> </div>
-				<div class="as" id = "drop5a" ondrop = "drop5(event)" ondragover="allowDrop5(event)"> <p class="ansText">Two </p> </div>
-			</div>
-		</div>
-	</body>
-	<div id="end">
-		KV, JC, WS, MS, JA
-	</div>
+      <div class="qs"id = "org4">
+        <img src="imgsrc/strawberries.png" draggable="true" ondragstart="drag4(event)" id="drag4">
+      </div>
+
+      <div class="qs"id = "org5">
+        <img src="imgsrc/bananas.png" draggable="true" ondragstart="drag5(event)" id="drag5">
+      </div>
+
+      <div class="as" id = "drop1a" ondrop = "drop1(event)" ondragover="allowDrop1(event)"> <p class="ansText">Five Pineapples</p> </div>
+      <div class="as" id = "drop2a" ondrop = "drop2(event)" ondragover="allowDrop2(event)"> <p class="ansText">Four Apples</p> </div>
+      <div class="as" id = "drop3a" ondrop = "drop3(event)" ondragover="allowDrop3(event)"> <p class="ansText">Six Pears</p> </div>
+      <div class="as" id = "drop4a" ondrop = "drop4(event)" ondragover="allowDrop4(event)"> <p class="ansText">Three Strawberries</p> </div>
+      <div class="as" id = "drop5a" ondrop = "drop5(event)" ondragover="allowDrop5(event)"> <p class="ansText">Two Bananas</p> </div>
+
+
+
+
+
+  </body>
+  <div id="end">
+    KV, JC, WS, MS, JA
+  </div>
 </html>
